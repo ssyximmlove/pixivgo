@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "moe.ardor"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -15,8 +15,10 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":module_pixiv_client"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
